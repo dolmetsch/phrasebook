@@ -1,0 +1,65 @@
+[
+	{
+		"model": "phrasebook.language",
+		"pk": 1,
+		"fields": {
+			"created_at": "2022-07-15T21:52:20.347Z",
+			"updated_at": "2022-07-15T21:52:20.347Z",
+			"name": "Хантыйский"
+		}
+	},
+	{
+		"model": "phrasebook.tag",
+		"pk": 1,
+		"fields": {
+			"created_at": "2022-07-15T21:53:23.324Z",
+			"updated_at": "2022-07-15T21:53:23.324Z",
+			"name": "этикет"
+		}
+	},
+	{
+		"model": "phrasebook.chapter",
+		"pk": 1,
+		"fields": {
+			"created_at": "2022-07-15T22:09:38.716Z",
+			"updated_at": "2022-07-15T22:09:38.716Z",
+			"name": "Приветствие"
+		}
+	},
+	{
+		"model": "phrasebook.phrase",
+		"pk": 1,
+		"fields": {
+			"created_at": "2022-07-15T21:53:16.597Z",
+			"updated_at": "2022-07-15T22:09:46.419Z",
+			"original": "вўща вўща",
+			"transcription": "wʉśa-wʉśa",
+			"translation": "здравствуйте",
+			"language": 1,
+			"chapter": 1,
+			"tags": [
+				1
+			]
+		}
+	},
+	{
+		"model": "phrasebook.phraseaudio",
+		"pk": 1,
+		"fields": {
+			"created_at": "2022-07-15T21:54:53.575Z",
+			"updated_at": "2022-07-15T21:54:53.575Z",
+			"phrase": 1,
+			"file": "uploads/phrase_audios/вуща_вуща_m.wav"
+		}
+	},
+	{
+		"model": "phrasebook.phraseaudio",
+		"pk": 2,
+		"fields": {
+			"created_at": "2022-07-15T21:55:00.754Z",
+			"updated_at": "2022-07-15T21:55:00.754Z",
+			"phrase": 1,
+			"file": "uploads/phrase_audios/вуща_вуща_f.wav"
+		}
+	}
+]

@@ -24,6 +24,18 @@ DEBUG = True
 
 ALLOWED_HOSTS = [ 'gbezyuk.ru', '127.0.0.1', 'localhost', ]
 
+CORS_ALLOWED_ORIGINS = [
+    "http://gbezyuk.ru",
+	"http://127.0.0.1",
+    "http://localhost",
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    "http://gbezyuk.ru",
+	"http://127.0.0.1",
+    "http://localhost",
+]
+
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -35,6 +47,8 @@ INSTALLED_APPS = [
 
     'django_extensions',
 
+	"corsheaders",
+
 	'django_filters',
     'rest_framework',
 
@@ -44,8 +58,10 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+	'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
+	'corsheaders.middleware.CorsPostCsrfMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -112,3 +128,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 REST_FRAMEWORK = {
     'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend']
 }
+

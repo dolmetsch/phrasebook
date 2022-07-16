@@ -9,4 +9,5 @@ class PhraseViewSet(ModelViewSet):
 	filterset_fields = (
 		'language',
 		'tags',
+		'chapter',
 	)

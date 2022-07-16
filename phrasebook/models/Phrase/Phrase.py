@@ -21,15 +21,15 @@ class Phrase (AbstractModel):
 
 	transcription = models.CharField(
 		max_length = 255,
-		null = False,
-		blank = False,
+		null = True,
+		blank = True,
 		verbose_name = _('transcription'),
 	)
 
 	translation = models.CharField(
 		max_length = 255,
-		null = False,
-		blank = False,
+		null = True,
+		blank = True,
 		verbose_name = _('translation'),
 	)
 

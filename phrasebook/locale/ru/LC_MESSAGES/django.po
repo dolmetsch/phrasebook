@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-16 01:08+0300\n"
+"POT-Creation-Date: 2022-07-16 11:48+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,7 +45,7 @@ msgstr "язык"
 msgid "languages"
 msgstr "языки"
 
-#: models/Phrase/Phrase.py:9 models/PhraseAudio/PhraseAudio.py:16
+#: models/Phrase/Phrase.py:9 models/PhraseAudio/PhraseAudio.py:17
 msgid "phrase"
 msgstr "фраза"
 
@@ -69,17 +69,21 @@ msgstr "перевод"
 msgid "tags"
 msgstr "теги"
 
-#: models/PhraseAudio/PhraseAudio.py:9
+#: models/PhraseAudio/PhraseAudio.py:10
 msgid "phrase audio"
 msgstr "аудио фразы"
 
-#: models/PhraseAudio/PhraseAudio.py:10
+#: models/PhraseAudio/PhraseAudio.py:11
 msgid "phrase audios"
 msgstr "аудио фраз"
 
-#: models/PhraseAudio/PhraseAudio.py:24
+#: models/PhraseAudio/PhraseAudio.py:25
 msgid "file"
 msgstr "файл"
+
+#: models/PhraseAudio/PhraseAudio.py:33
+msgid "user contributed"
+msgstr "добавивший пользователь"
 
 #: models/Tag/Tag.py:9
 msgid "tag"

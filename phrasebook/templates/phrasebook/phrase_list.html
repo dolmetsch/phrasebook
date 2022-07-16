@@ -1,0 +1,11 @@
+{% if language %}
+<h2>{{ language }}</h2>
+{% endif %}
+
+{% for phrase in phrases %}
+<div class="phrase">
+	<strong class="original">{{ phrase.original }}</strong>
+	<span class="transcription">{{ phrase.transcription }}</span>
+	<span class="translation">{{ phrase.translation }}</span>
+</div>
+{% endfor %}
